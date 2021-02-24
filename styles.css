@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Code+Pro:wght@300&display=swap');
+
+.wrapper {
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #46c373;
+    color: white;
+
+}
+
+nav .logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav .navlink {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+nav .navlink li {
+    list-style: none;
+}
+
+nav .navlink a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: white;
+}
+
+nav .navlink a:hover {
+    color: #0080FE;
+    transition: all 0.3s ease 0s;
+}
+
+nav button {
+    background-color: #0080FE;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 5px;
+}
+
+nav button:hover {
+    transform: scale(1.2);
+}
+
+nav button a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.sandwhich {
+    cursor: pointer;
+}
+
+nav .sandwhich div {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+}
+
+.main-background img{
+    width: 100%;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jumbotron p {
+    font-size: 3rem;
+    padding: 80px;
+}
+
+.main-content {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #9c5f2a;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-content .sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #73543b;
+    padding: 10px 20px 80px 20px;
+    border-radius: 40px;
+}
+
+.main-content .sidebar p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+}
+
+.main-content .sidebar h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.main-content .contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    border-radius: 40px;
+}
+
+.main-content .contents img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #0bc9f6;
+}
+
+.main-content .contents p {
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.developer img {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px;
+}
+
+.developer p {
+    font-size: 2rem;
+}
+
+.developer h3 {
+    font-size: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9c5f2a;
+    padding: 20px;
+}
+
+.form .register {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 0px;
+    font-size: 2rem;
+}
+
+.form table {
+    padding: 30px 0px;
+}
+
+.form th {
+    text-align: right;
+    color: white;
+    letter-spacing: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46c373;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+footer img:hover {
+    transform: scale(1.5);
+}
+
+footer p {
+    display: block;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav .navlink {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    nav .sandwhich div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    nav button {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 634px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    nav .navlink {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .jumbotron {
+        flex-direction: column;
+    }
+    .jumbotron p {
+        font-size: 2rem;
+    }
+    .main-content .sidebar h1 {
+        font-size: 2rem;
+    }
+    .main-content .sidebar p {
+        letter-spacing: 2px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main-content .contents {
+        flex-direction: column;
+    }
+    .main-content .contents p {
+        padding: 20px 0px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .main-content .contents {
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    .main-content .sidebar {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .main-content .contents {
+        flex-direction: column;
+    }
+    .main-content .contents p {
+        padding: 20px 0px;
+    }
+    .main-content .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .wrapper {
+        width: 126%;
+    }
+}
